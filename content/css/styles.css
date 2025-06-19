@@ -1,0 +1,77 @@
+body {
+    background-color: #00E508;
+}
+
+.sign-panel, .list-panel {
+    position: relative;
+}
+
+.sign {
+    position: absolute;
+
+    .sign-message {
+        position: absolute;
+        top: 6rem;
+        right: 3rem;
+        left: 1rem;
+        color: white;
+    }
+}
+
+.list-panel {
+    padding-top: 20%;
+
+    ul {
+        list-style: none;
+
+        li {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+}
+
+.cat-w-overlay {
+    position: relative;
+    height: 80%;
+
+    .sign-cat {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: -30px;
+    }
+
+    .text-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: -150px;
+    }
+}
+
+.twitter-link {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 20;
+}
+
+.official-text {
+    margin-bottom: -50px;
+    transform: rotate(-30deg);
+
+    h2 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+}
+
+.btn {
+    &.btn-link {
+        background-color: black;
+        border-radius: 40px;
+        padding: 12px 20px;
+        text-decoration: none;
+        color: white;
+    }
+}
