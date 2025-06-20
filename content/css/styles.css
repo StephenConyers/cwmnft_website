@@ -1,69 +1,20 @@
+html, body, .row {
+    @media (min-width: 1050px) {
+        height: fit-content;
+    }
+}
+
 body {
     background-color: #00E508;
+    overflow-x: hidden;
 }
 
-.sign-panel, .list-panel {
-    position: relative;
+ul {
+    padding: 0;
 }
 
-.sign {
-    position: absolute;
-
-    .sign-message {
-        position: absolute;
-        top: 6rem;
-        right: 3rem;
-        left: 1rem;
-        color: white;
-    }
-}
-
-.list-panel {
-    padding-top: 20%;
-
-    ul {
-        list-style: none;
-
-        li {
-            font-size: 24px;
-            font-weight: bold;
-        }
-    }
-}
-
-.cat-w-overlay {
-    position: relative;
-    height: 80%;
-
-    .sign-cat {
-        position: absolute;
-        bottom: 0;
-        margin-bottom: -30px;
-    }
-
-    .text-overlay {
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin-right: -150px;
-    }
-}
-
-.twitter-link {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    z-index: 20;
-}
-
-.official-text {
-    margin-bottom: -50px;
-    transform: rotate(-30deg);
-
-    h2 {
-        font-size: 40px;
-        font-weight: bold;
-    }
+.text-red {
+    color: red;
 }
 
 .btn {
@@ -73,5 +24,110 @@ body {
         padding: 12px 20px;
         text-decoration: none;
         color: white;
+    }
+}
+
+.flex-middle {
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.justify-items-center {
+    justify-items: center;
+}
+
+.sign-container {
+    position: relative;
+
+    .sign-text {
+        text-align: center;
+        color: white;
+        font-size: 10px;
+        position: absolute;
+        bottom: 48px;
+        left: 32px;
+        width: 52%;
+        height: auto;
+
+        @media (min-width: 325px) {
+            font-size: 12px;
+            width: 52%;
+            bottom: 48px;
+        }
+
+        @media (min-width: 440px) {
+            font-size: 18px;
+            width: 58%;
+            bottom: 62px;
+        }
+
+        @media (min-width: 700px) {
+            font-size: 22px;
+            width: 55%;
+            bottom: 100px;
+        }
+
+        @media (min-width: 700px) {
+            font-size: 26px;
+            width: 55%;
+            bottom: 125px;
+        }
+
+        @media (min-width: 850px) {
+            font-size: 26px;
+            width: 55%;
+            bottom: 160px;
+        }
+
+        @media (min-width: 900px) {
+            font-size: 26px;
+            width: 50%;
+            bottom: 160px;
+        }
+
+        @media (min-width: 1025px) {
+            font-size: 26px;
+            width: 45%;
+            bottom: 160px;
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 26px;
+            width: 60%;
+            bottom: 105px;
+        }
+
+        @media (min-width: 1360px) {
+            font-size: 28px;
+            width: 60%;
+            bottom: 124px;
+        }
+
+        @media (min-width: 1360px) {
+            font-size: 28px;
+            width: 60%;
+            bottom: 124px;
+        }
+
+        @media (min-width: 1460px) {
+            font-size: 30px;
+            width: 55%;
+            bottom: 124px;
+        }
+
+        @media (min-width: 1555px) {
+            font-size: 32px;
+            width: 50%;
+            bottom: 124px;
+        }
+
+        @media (min-width: 2000px) {
+            font-size: 32px;
+            width: 42%;
+            bottom: 124px;
+        }
     }
 }
